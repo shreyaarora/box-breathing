@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+	.square {
+		height: 30vw;
+		width: 30vw;
+
+		/* center on the window */
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		/* border */
+		border: 30px solid;
+	  	border-image-source: linear-gradient(45deg, rgb(222, 208, 194), rgb(170, 200, 201));
+	  	border-image-slice: 1;
+	}
+
+
+/*@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut{
+	from{
+		opacity: 1;
+	}
+	to{
+		opacity: .1;
+	}
+}
+
+@keyframes fadeHold{
+	from{
+		opacity: .1;
+	}
+	to{
+		opacity: 0;
+	}
+}*/
+
+@keyframes testingFades{
+	0%{
+		opacity: 1;
+	}
+	30%{
+		opacity: 0;
+	}
+	100%{
+		opactity:1;
+	}
+}
+
+@keyframes testingFades2{
+	0%{
+		opacity: 0;
+	}
+	5%{
+		opacity: 1;
+	}
+	30%{
+		opacity: 0;
+	}
+	100%{
+		opactity:0;
+	}
+}
+
+.animatedText {
+	position: relative;
+	opacity: 0;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+	font-size: 50px;
+	color: rgb(170, 200, 201);
+	width: 50%;
+	height:25%;
+	animation: 
+		testingFades 16s infinite;
+
+	}
+
+	#first{
+		/*animation-delay: 0s;*/	}
+	#second{
+		animation-delay: 1s;	}
+	#third{
+		animation-delay: 2s;
+	}
+	#fourth{
+		animation-delay: 3s;
+	}
+	#fifth{
+		animation-delay: 4s;
+	}
+	#sixth{
+		animation-delay: 5s;
+	}
+	#seventh{
+		animation-delay: 6s;
+	}
+	#eighth{
+		animation-delay: 7s;
+	}
+	#ninth{
+		animation-delay: 8s;	}
+	#tenth{
+		animation-delay: 9s;
+	}
+	#eleventh{
+		animation-delay: 10s;
+	}
+	#twelvth{
+		animation-delay: 11s;
+	}
+	#thirteenth{
+		animation-delay: 12s;
+	}
+	#fourteenth{
+		animation-delay: 13s;
+	}
+	#fifteenth{
+		animation-delay: 14s;
+	}
+	#sixteenth{
+		animation-delay: 15s;
+	}
+
+	#numberContainer{
+		width: 30vw;
+		display: flex;
+		position: fixed;
+		top: 12%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#numberContainer2{
+		height: 30vw;
+		display: inline-block;
+		position: fixed;
+		top: 50%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+	}
+
+	#numberContainer3{
+		width: 30vw;
+		display: flex;
+		position: fixed;
+		bottom: 5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#numberContainer4{
+		height: 30vw;
+		display: inline-block;
+		position: fixed;
+		top:50%;
+		left: 30%;
+		transform: translate(-50%, -50%);
+	}
+
+.animatedTextBreathe {
+	position: fixed;
+	opacity: 0;
+	animation: 
+		testingFades2 16s infinite;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+	font-size: 50px;
+	color: rgb(170, 200, 201);
+	text-align: center;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%, -50%);
+	}
+
+	#Hold{
+		animation-delay: 4s;
+	}
+
+	#BreatheOut{
+		animation-delay: 8s;
+	}
+
+	#Hold2{
+		animation-delay: 12s;
+	}
+
+</style>
+</head>
+
+
+<body>
+	<div>
+		<div id = "numberContainer">
+			<div id = "first" class="animatedText">1</div>
+			<div id = "second" class="animatedText">2</div>
+			<div id = "third" class="animatedText">3</div>
+			<div id = "fourth" class="animatedText">4</div>
+		</div>
+
+	<div>
+			<div id = "numberContainer4">
+				<div id = "sixteenth" class="animatedText">4</div>
+				<div id = "fifteenth" class="animatedText">3</div>
+				<div id = "fourteenth" class="animatedText">2</div>
+				<div id = "thirteenth" class="animatedText">1</div>
+			</div>
+
+			<div class="square">
+				<div class = "animatedTextBreathe">Breathe In</div>
+				<div id = "Hold" class = "animatedTextBreathe">Hold</div>
+				<div id = "BreatheOut" class = "animatedTextBreathe">Breathe Out</div>
+				<div id = "Hold2" class = "animatedTextBreathe">Hold</div>
+			</div>
+
+			<div id = "numberContainer2">
+				<div id = "fifth" class="animatedText">1</div>
+				<div id = "sixth" class="animatedText">2</div>
+				<div id = "seventh" class="animatedText">3</div>
+				<div id = "eighth" class="animatedText">4</div>
+			</div>
+	</div>
+		<div id = "numberContainer3">
+			<div id = "twelvth" class="animatedText">4</div>
+			<div id = "eleventh" class="animatedText">3</div>
+			<div id = "tenth" class="animatedText">2</div>
+			<div id = "ninth" class="animatedText">1</div>
+		</div>
+		</div>
+	</div>
+</body>
+
+
+</html> 

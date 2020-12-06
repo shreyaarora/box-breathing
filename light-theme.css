@@ -1,0 +1,244 @@
+body {
+  background-color: #FFFFFF;
+}
+
+.square {
+		height: 30vw;
+		width: 30vw;
+
+		/* center on the window */
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+
+		/* border */
+		border: 3.5vw solid;
+	  	border-image-source: linear-gradient(45deg, rgb(222, 208, 194), rgb(170, 200, 201));
+	  	border-image-slice: 1;
+	}
+
+/* fades */
+
+@keyframes testingFades{
+	0%{
+		opacity: 1;
+	}
+	30%{
+		opacity: 0;
+	}
+	100%{
+		opactity:1;
+	}
+}
+
+@keyframes testingFades2{
+	0%{
+		opacity: 0;
+	}
+	10%{
+		opacity: 1;
+	}
+
+	20%{
+		opacity: 1;
+	}
+
+	30%{
+		opacity: 0;
+	}
+
+	100%{
+		opactity:0;
+	}
+}
+
+.animatedText {
+	position: relative;
+	opacity: 0;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+	font-size: 3vw;
+	color: rgb(170, 200, 201);
+	width: 50%;
+	height:25%;
+	animation: 
+		testingFades 16s infinite;
+
+	}
+
+	#first{
+		/*animation-delay: 0s;*/	}
+	#second{
+		animation-delay: 1s;	}
+	#third{
+		animation-delay: 2s;
+	}
+	#fourth{
+		animation-delay: 3s;
+	}
+	#fifth{
+		animation-delay: 4s;
+	}
+	#sixth{
+		animation-delay: 5s;
+	}
+	#seventh{
+		animation-delay: 6s;
+	}
+	#eighth{
+		animation-delay: 7s;
+	}
+	#ninth{
+		animation-delay: 8s;	}
+	#tenth{
+		animation-delay: 9s;
+	}
+	#eleventh{
+		animation-delay: 10s;
+	}
+	#twelvth{
+		animation-delay: 11s;
+	}
+	#thirteenth{
+		animation-delay: 12s;
+	}
+	#fourteenth{
+		animation-delay: 13s;
+	}
+	#fifteenth{
+		animation-delay: 14s;
+	}
+	#sixteenth{
+		animation-delay: 15s;
+	}
+
+	#numberContainer{
+		width: 30vw;
+		display: flex;
+		position: fixed;
+		top: 12%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#numberContainer2{
+		height: 30vw;
+		display: inline-block;
+		position: fixed;
+		top: 50%;
+		left: 70%;
+		transform: translate(-50%, -50%);
+	}
+
+	#numberContainer3{
+		width: 30vw;
+		display: flex;
+		position: fixed;
+		bottom: 5%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	#numberContainer4{
+		height: 30vw;
+		display: inline-block;
+		position: fixed;
+		top:50%;
+		left: 30%;
+		transform: translate(-50%, -50%);
+	}
+
+.animatedTextBreathe {
+	position: fixed;
+	opacity: 0;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight:100;
+	font-size: 3.5vw;
+	color: rgb(170, 200, 201);
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+		animation: 
+		testingFades2 16s infinite;
+	}
+
+	#Hold{
+		animation-delay: 4s;
+	}
+
+	#BreatheOut{
+		animation-delay: 8s;
+	}
+
+	#Hold2{
+		animation-delay: 12s;
+	}
+/*
+/*SWITCH TOGGLE*/
+
+/* switch foundation
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* circle on toggle
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* color different when toggled on 
+input:checked + .slider {
+  background-color: rgb(170, 200, 201);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+/* move toggle when checked
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+*/

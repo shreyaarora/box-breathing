@@ -7,60 +7,54 @@
 
 </head>
 
-<body>
-	<div>
-		<div id = "numberContainer">
-			<div id = "first" class="animatedText">1</div>
-			<div id = "second" class="animatedText">2</div>
-			<div id = "third" class="animatedText">3</div>
-			<div id = "fourth" class="animatedText">4</div>
+<body style="height:100vh">
+	<button class="btn-toggle" style="height:4vh;margin:8px">Dark Mode</button>
+	<div id="topRow" style="display:flex; flex-direction:column; height:25vh;">
+		<div id="topPadding" style="flex:1">
+			<div id = "numberContainer">
+				<div id = "first" class="animatedText">1</div>
+				<div id = "second" class="animatedText">2</div>
+				<div id = "third" class="animatedText">3</div>
+				<div id = "fourth" class="animatedText">4</div>
+			</div>
+		</div>
+	</div>
+	<div id="middleRow" style="display:flex;height:50vh;">
+		<div id = "numberContainer4">
+			<div id = "sixteenth" class="animatedText">4</div>
+			<div id = "fifteenth" class="animatedText">3</div>
+			<div id = "fourteenth" class="animatedText">2</div>
+			<div id = "thirteenth" class="animatedText">1</div>
 		</div>
 
-	<div>
-			<div id = "numberContainer4">
-				<div id = "sixteenth" class="animatedText">4</div>
-				<div id = "fifteenth" class="animatedText">3</div>
-				<div id = "fourteenth" class="animatedText">2</div>
-				<div id = "thirteenth" class="animatedText">1</div>
-			</div>
+		<div class="square">
+			<div class = "animatedTextBreathe">Breathe In</div>
+			<div id = "Hold" class = "animatedTextBreathe">Hold</div>
+			<div id = "BreatheOut" class = "animatedTextBreathe">Breathe Out</div>
+			<div id = "Hold2" class = "animatedTextBreathe">Hold</div>
+		</div>
 
-			<div class="square">
-				<div class = "animatedTextBreathe">Breathe In</div>
-				<div id = "Hold" class = "animatedTextBreathe">Hold</div>
-				<div id = "BreatheOut" class = "animatedTextBreathe">Breathe Out</div>
-				<div id = "Hold2" class = "animatedTextBreathe">Hold</div>
-			</div>
-
-			<div id = "numberContainer2">
-				<div id = "fifth" class="animatedText">1</div>
-				<div id = "sixth" class="animatedText">2</div>
-				<div id = "seventh" class="animatedText">3</div>
-				<div id = "eighth" class="animatedText">4</div>
-			</div>
-
-<!-- <label class="switch">
-	<input type="checkbox">
-	<span class="slider round"></span>
-</label> -->
-
-
+		<div id = "numberContainer2">
+			<div id = "fifth" class="animatedText">1</div>
+			<div id = "sixth" class="animatedText">2</div>
+			<div id = "seventh" class="animatedText">3</div>
+			<div id = "eighth" class="animatedText">4</div>
+		</div>
 	</div>
+	<div id="bottomRow" style="display:flex;flex-direction:column;height:25vh;">
 		<div id = "numberContainer3">
 			<div id = "twelvth" class="animatedText">4</div>
 			<div id = "eleventh" class="animatedText">3</div>
 			<div id = "tenth" class="animatedText">2</div>
 			<div id = "ninth" class="animatedText">1</div>
 		</div>
-		<button class="btn-toggle">Dark Mode</button>
+		<div id="bottomPadding" style="flex:1"></div>
 	</div>
-
 	<script>
-
 		// Select the button
 		const btn = document.querySelector(".btn-toggle");
 		// Select the stylesheet <link>
 		const theme = document.querySelector("#theme-link");
-
 		// Listen for a click on the button
 		btn.addEventListener("click", function() {
 		  // If the current URL contains "ligh-theme.css"
@@ -74,7 +68,6 @@
 		  }
 		});
 	</script>
-
 </body>
 
 

@@ -184,15 +184,17 @@ body {
 	}
 
 .animatedTextBreathe {
-	position: fixed;
 	opacity: 0;
-	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
-	font-weight:100;
-	font-size: 3.5vw;
-	color: rgb(170, 200, 201);
-	text-align: center;
-	line-height: 30vw;
-	width: 30vw;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 4vw;
+    color: rgb(170, 200, 201);
+    text-align: center;
+    margin-top: 13vw;
+    /* z-index: 1; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    width: 100%;
 	animation: testingFades2 16s infinite;
 	}
 

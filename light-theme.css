@@ -5,18 +5,15 @@ body {
 .square {
 		height: 30vw;
 		width: 30vw;
-
-		/* center on the window */
-		position: fixed;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-
 		/* border */
 		border: 3.5vw solid;
 	  	border-image-source: linear-gradient(45deg, rgb(222, 208, 194), rgb(170, 200, 201));
 	  	border-image-slice: 1;
 	}
+
+.sidewaysFiller {
+	flex:1;
+}
 
 /* fades */
 
@@ -60,93 +57,129 @@ body {
 	font-weight:100;
 	font-size: 3vw;
 	color: rgb(170, 200, 201);
-	width: 50%;
-	height:25%;
 	animation: 
 		testingFades 16s infinite;
 
 	}
 
 	#first{
-		/*animation-delay: 0s;*/	}
+		width: 7.25vw;
+		text-align: center;	
+	}
 	#second{
-		animation-delay: 1s;	}
+		animation-delay: 1s;
+		width: 7.25vw;
+		text-align: center;	
+	}
 	#third{
 		animation-delay: 2s;
+		width: 7.25vw;
+		text-align: center;	
 	}
 	#fourth{
 		animation-delay: 3s;
+		width: 7.25vw;
+		text-align: center;	
 	}
 	#fifth{
 		animation-delay: 4s;
+		height: 7.25vw;
+		line-height: 7.25vw;
+		text-align: center;
 	}
 	#sixth{
 		animation-delay: 5s;
+		height: 7.25vw;
+		line-height: 7.25vw;
+		text-align: center;
 	}
 	#seventh{
 		animation-delay: 6s;
+		height: 7.25vw;
+		line-height: 7.25vw;
+		text-align: center;
 	}
 	#eighth{
 		animation-delay: 7s;
+		height: 7.25vw;
+		line-height: 7.25vw;
+		text-align: center;
 	}
 	#ninth{
-		animation-delay: 8s;	}
+		animation-delay: 8s;
+		width: 7.25vw;
+		text-align: center;	
+	}
 	#tenth{
 		animation-delay: 9s;
+		width: 7.25vw;
+		text-align: center;	
 	}
 	#eleventh{
 		animation-delay: 10s;
+		width: 7.25vw;
+		text-align: center;	
 	}
 	#twelvth{
 		animation-delay: 11s;
+		width: 7.25vw;
+		text-align: center;	
 	}
 	#thirteenth{
 		animation-delay: 12s;
+		height: 7.25vw;
+		line-height: 7.25vw;
+		text-align: center;
 	}
 	#fourteenth{
 		animation-delay: 13s;
+		height: 7.25vw;
+		line-height: 7.25vw;
+		text-align: center;
 	}
 	#fifteenth{
 		animation-delay: 14s;
+		height: 7.25vw;
+		line-height: 7.25vw;
+		text-align: center;
 	}
 	#sixteenth{
 		animation-delay: 15s;
+		height: 7.25vw;
+		line-height: 7.25vw;
+		text-align: center;
 	}
 
 	#numberContainer{
 		width: 30vw;
 		display: flex;
-		position: fixed;
-		top: 12%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 8px;
 	}
 
 	#numberContainer2{
 		height: 30vw;
-		display: inline-block;
-		position: fixed;
-		top: 50%;
-		left: 70%;
-		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction:column;
+		margin-top:3.5vw;
+		margin-left:12px;
 	}
 
 	#numberContainer3{
 		width: 30vw;
 		display: flex;
-		position: fixed;
-		bottom: 5%;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:8px;
 	}
 
 	#numberContainer4{
 		height: 30vw;
-		display: inline-block;
-		position: fixed;
-		top:50%;
-		left: 30%;
-		transform: translate(-50%, -50%);
+		display: flex;
+		flex-direction:column;
+		margin-top:3.5vw;
+		margin-right:12px;
 	}
 
 .animatedTextBreathe {

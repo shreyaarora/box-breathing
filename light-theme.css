@@ -9,6 +9,7 @@ body {
 		border: 3.5vw solid;
 	  	border-image-source: linear-gradient(45deg, rgb(222, 208, 194), rgb(170, 200, 201));
 	  	border-image-slice: 1;
+		display: flex;
 	}
 
 .sidewaysFiller {
@@ -190,11 +191,9 @@ body {
 	font-size: 3.5vw;
 	color: rgb(170, 200, 201);
 	text-align: center;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-		animation: 
-		testingFades2 16s infinite;
+	line-height: 30vw;
+	width: 30vw;
+	animation: testingFades2 16s infinite;
 	}
 
 	#Hold{
